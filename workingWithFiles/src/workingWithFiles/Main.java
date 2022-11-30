@@ -19,7 +19,7 @@ public class Main {
 	
 	
 	public static void createFile() {
-		File file = new File("C:\\Users\\Ferhat DAĞ\\Desktop\\NewFile\\students.txt");
+		File file = new File("C:\\*\*\\*\\NewFile\\students.txt");
 		try {
 			if(file.createNewFile()) {
 				System.out.println("File is created.");
@@ -34,7 +34,7 @@ public class Main {
 	}
 	
 	public static void getFileInfo() {
-		File file = new File("C:\\Users\\Ferhat DAĞ\\Desktop\\NewFile\\students.txt");
+		File file = new File("C:\\*\\*\\*\NewFile\\students.txt");
 		if(file.exists()) {
 			System.out.println("File name: " + file.getName());
 			System.out.println("File path: " + file.getAbsolutePath());
@@ -45,7 +45,7 @@ public class Main {
 	}
 	
 	public static void readFile() {
-		File file = new File("C:\\Users\\Ferhat DAĞ\\Desktop\\NewFile\\students.txt");
+		File file = new File("C:\\*\\*\\*\\NewFile\\students.txt");
 		try {
 			Scanner reader = new Scanner(file);
 			while(reader.hasNextLine()) {
@@ -61,7 +61,7 @@ public class Main {
 		
 	public static void writeFile() {
 		try {
-			BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\\\Users\\\\Ferhat DAĞ\\\\Desktop\\\\NewFile\\\\students.txt",true));
+			BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\\\*\\\*\\\\*\\\\NewFile\\\\students.txt",true));
 			writer.newLine();
 			writer.write("Turkey");
 			System.out.println("Writed to file");
